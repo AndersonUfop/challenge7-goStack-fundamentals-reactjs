@@ -30,8 +30,6 @@ const Import: React.FC = () => {
 
     data.append('file', file.file, file.name);
 
-    // TODO
-
     try {
       await api.post('/transactions/import', data);
       history.push('/');
